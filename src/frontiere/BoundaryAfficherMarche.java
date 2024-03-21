@@ -10,6 +10,10 @@ public class BoundaryAfficherMarche {
 	}
 
 	public void afficherMarche(String nomAcheteur) {
+		String[] infosMarche=controlAfficherMarche.donnerInfosMarche();
+		if(infosMarche.length == 0) {
+			System.out.println
+		}
 
 	}
 }
