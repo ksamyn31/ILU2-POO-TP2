@@ -74,12 +74,7 @@ public class TestControleursDesCas {
 				controlVerifierIdentite, village);
 		int numeroEtal = controlPrendreEtal.prendreEtal("Obelix", "fleur", 5);
 		System.out.println("Obelix a pris l'�tal n�" + numeroEtal);
-		System.out.println("///////////////////////////////");
-		System.out.println("Cas 4 : Prendre etal");
-		ControlPrendreEtal controlPrendreEtal1 = new ControlPrendreEtal(
-				controlVerifierIdentite, village);
-		int numeroEtal1 = controlPrendreEtal1.prendreEtal("Obelix", "fleur", 5);
-		System.out.println("Obelix a pris l'�tal n�" + numeroEtal1);
+	
 
 //		Sortie Console :
 //		Cas 4 : Prendre etal
@@ -88,26 +83,27 @@ public class TestControleursDesCas {
 
 		// Cas 5 : trouverEtalVendeur
 
-//		System.out.println("///////////////////////////////");
-//		System.out.println("Cas 5 : trouver etal vendeur");
-//		ControlTrouverEtalVendeur controlTrouverEtalVendeur = new ControlTrouverEtalVendeur(
-//				village);
-//		Etal etalObelix = controlTrouverEtalVendeur
-//				.trouverEtalVendeur("Obelix");
-//		Etal etalIntrus = controlTrouverEtalVendeur
-//				.trouverEtalVendeur("Intrus");
-//		System.out.print("L'étal d'Obélix");
-//		if (etalObelix != null) {
-//			System.out.println(" est trouvé");
-//		} else {
-//			System.out.println(" n'est pas trouvé");
-//		}
-//		System.out.print("L'étal de Intrus");
-//		if (etalIntrus != null) {
-//			System.out.println(" est trouvé");
-//		} else {
-//			System.out.println(" n'est pas trouvé");
-//		}
+		System.out.println("///////////////////////////////");
+		System.out.println("Cas 5 : trouver etal vendeur");
+		ControlTrouverEtalVendeur controlTrouverEtalVendeur = new ControlTrouverEtalVendeur(
+				village);
+		
+		Etal etalObelix = controlTrouverEtalVendeur
+				.trouverEtalVendeur("Obelix");
+		Etal etalIntrus = controlTrouverEtalVendeur
+				.trouverEtalVendeur("Intrus");
+		System.out.print("L'étal d'Obélix");
+		if (etalObelix != null) {
+			System.out.println(" est trouvé");
+		} else {
+			System.out.println(" n'est pas trouvé");
+		}
+		System.out.print("L'étal de Intrus");
+		if (etalIntrus != null) {
+			System.out.println(" est trouvé");
+		} else {
+			System.out.println(" n'est pas trouvé");
+		}
 		
 
 //		Sortie Console :
