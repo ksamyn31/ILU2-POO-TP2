@@ -12,18 +12,18 @@ public class BoundaryAfficherMarche {
 	public void afficherMarche(String nomAcheteur) {
 		String[] infosMarche=controlAfficherMarche.donnerInfosMarche();
 		int i = 0;
+		int cmp = 0;
 		if(infosMarche.length == 0) {
 			System.out.println("Le marché est vide, revenez plus tard.");
 		}
 		else {
-			System.out.println(nomAcheteur+"vous trouverez au marché:");
+			System.out.println(nomAcheteur+" vous trouverez au marché:");
 		}
-		while(infosMarche != null) {
-			System.out.println("-"+infosMarche[i]);
-			i++;
-			System.out.println("qui vend"+infosMarche[i]);
-			i++;
-			System.out.println(" "+infosMarche[i]);
+		while(infosMarche.length!=cmp) {
+			if(infosMarche[i]==String.valueOf(true))
+				System.out.println("-"+infosMarche[i]+"qui vend"
+			+infosMarche[i+1]+" "+infosMarche[i+2]);
+			cmp++;
 		}
 	}
 }
